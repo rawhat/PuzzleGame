@@ -1,7 +1,7 @@
 ﻿using UnityEngine;
 using System.Collections;
 
-public class BlockMover : MonoBehaviour {
+public class BlockFallMover : MonoBehaviour {
 
     public float minSpeed;
     public float maxSpeed;
