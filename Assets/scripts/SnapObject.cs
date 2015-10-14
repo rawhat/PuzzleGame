@@ -11,8 +11,9 @@ public class SnapObject : MonoBehaviour {
         if (obj.gameObject.CompareTag("RoadPiece") && !Input.GetMouseButton(1) && !blockMoved)
         {
             blockMoved = true;
-            obj.gameObject.GetComponent<BlockController>().enabled = false;
-            obj.gameObject.GetComponent<BlockFallMover>().enabled = false;
+            Destroy(obj.gameObject.GetComponent<BlockController>());
+            Destroy(obj.gameObject.GetComponent<BlockFallMover>());
+            obj.gameObject.transform.DOKill();
             Vector2 currPieceDimensions = this.transform.localScale;
             Vector2 nextPieceDimensions = obj.transform.localScale;
             Vector3 targetPosition = new Vector3(transform.position.x, transform.position.y + (currPieceDimensions.y / 2) + (nextPieceDimensions.y / 2), 1f);

@@ -7,6 +7,8 @@ public class BlockController : MonoBehaviour {
 	private Vector3 screenPoint;
 	private Vector3 offset;
 
+    void Start() { }
+
 	void OnMouseDown()
 	{
 		screenPoint = Camera.main.WorldToScreenPoint(gameObject.transform.position);

@@ -6,32 +6,12 @@ public class BlockFallMover : MonoBehaviour {
 
     public float minSpeed;
     public float maxSpeed;
-    public float maxLifetime;
 
-    private float lifetime;
-    private float panelBottom;
-    private float speed;
+    private Vector3 panelBottom;
 
 	void Start () {
-        lifetime = 0f;
-        panelBottom = -Camera.main.pixelHeight;
-        //speed = Random.Range(minSpeed, maxSpeed);
-        transform.DOMove(new Vector3(transform.position.x, panelBottom, 1f), Random.Range(minSpeed, maxSpeed)).OnComplete(()=>Destroy(gameObject));
+        panelBottom = Camera.main.ScreenToWorldPoint(new Vector3(0f, 0f, 1f));
+        transform.DOMove(new Vector3(transform.position.x, panelBottom.y, 1f), Random.Range(minSpeed, maxSpeed)).OnComplete(()=>Destroy(gameObject));
 	}
 	
-/*
-	void Update () {
-        lifetime += Time.deltaTime;
-
-        if (lifetime >= maxLifetime)
-            Destroy(this.gameObject);
-        else
-        {
-            Vector3 currentPos = transform.position;
-            if (transform.position.y <= panelBottom)
-                Destroy(this.gameObject);
-            currentPos.y -= speed * Time.deltaTime;
-            transform.position = currentPos;
-        }
-	}*/
 }
