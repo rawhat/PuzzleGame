@@ -48,11 +48,13 @@
   <ItemGroup>
      <Compile Include="Assets\Demigiant\DOTween\Examples\Basics.cs" />
      <Compile Include="Assets\Demigiant\DOTween\Examples\Sequences.cs" />
+     <Compile Include="Assets\scripts\BlockController.cs" />
      <Compile Include="Assets\scripts\BlockDestroyer.cs" />
      <Compile Include="Assets\scripts\BlockFallMover.cs" />
      <Compile Include="Assets\scripts\ClickAndDrag.cs" />
      <Compile Include="Assets\scripts\FallingBlockController.cs" />
      <Compile Include="Assets\scripts\KillAfterLifetime.cs" />
+     <Compile Include="Assets\scripts\SnapObject.cs" />
      <None Include="Assets\Demigiant\DOTween\readme.txt" />
      <None Include="Assets\Demigiant\DOTween\DOTween50.xml" />
      <None Include="Assets\Demigiant\DOTween\DOTween46.xml" />
