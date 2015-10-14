@@ -21,7 +21,7 @@ public class FallingBlockController : MonoBehaviour {
     {
         while (true)
         {
-            yield return new WaitForSeconds(3f);
+            yield return new WaitForSeconds(1f);
             Vector3 spawnLocation = Camera.main.ScreenToWorldPoint(new Vector3(Random.Range(panelWidth, 2 * panelWidth), Camera.main.pixelHeight));
             spawnLocation.z = 1f;
             GameObject newBlock = (GameObject) Instantiate(blocks[Random.Range(0, blocks.Length)], spawnLocation, new Quaternion());
