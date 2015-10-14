@@ -51,7 +51,6 @@
      <Compile Include="Assets\scripts\BlockController.cs" />
      <Compile Include="Assets\scripts\BlockDestroyer.cs" />
      <Compile Include="Assets\scripts\BlockFallMover.cs" />
-     <Compile Include="Assets\scripts\ClickAndDrag.cs" />
      <Compile Include="Assets\scripts\FallingBlockController.cs" />
      <Compile Include="Assets\scripts\KillAfterLifetime.cs" />
      <Compile Include="Assets\scripts\SnapObject.cs" />

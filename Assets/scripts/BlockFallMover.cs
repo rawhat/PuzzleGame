@@ -1,5 +1,6 @@
 ﻿using UnityEngine;
 using System.Collections;
+using DG.Tweening;
 
 public class BlockFallMover : MonoBehaviour {
 
@@ -14,9 +15,11 @@ public class BlockFallMover : MonoBehaviour {
 	void Start () {
         lifetime = 0f;
         panelBottom = -Camera.main.pixelHeight;
-        speed = Random.Range(minSpeed, maxSpeed);
+        //speed = Random.Range(minSpeed, maxSpeed);
+        transform.DOMove(new Vector3(transform.position.x, panelBottom, 1f), Random.Range(minSpeed, maxSpeed)).OnComplete(()=>Destroy(gameObject));
 	}
 	
+/*
 	void Update () {
         lifetime += Time.deltaTime;
 
@@ -30,5 +33,5 @@ public class BlockFallMover : MonoBehaviour {
             currentPos.y -= speed * Time.deltaTime;
             transform.position = currentPos;
         }
-	}
+	}*/
 }

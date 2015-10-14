@@ -1,5 +1,6 @@
 ﻿using UnityEngine;
 using System.Collections;
+using DG.Tweening;
 
 public class BlockController : MonoBehaviour {
 
@@ -11,6 +12,7 @@ public class BlockController : MonoBehaviour {
 		screenPoint = Camera.main.WorldToScreenPoint(gameObject.transform.position);
 
 		offset = gameObject.transform.position - Camera.main.ScreenToWorldPoint(new Vector3(Input.mousePosition.x, Input.mousePosition.y, screenPoint.z));
+        gameObject.transform.DOPause();
 	}
 
 	void OnMouseDrag()
@@ -19,4 +21,9 @@ public class BlockController : MonoBehaviour {
 		Vector3 curPosition = Camera.main.ScreenToWorldPoint(curScreenPoint) + offset;
 		transform.position = curPosition;
 	}
+
+    void OnMouseUp()
+    {
+        gameObject.transform.DOPlay();
+    }
 }
