@@ -5,7 +5,7 @@
 	<Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
 	<ProductVersion>10.0.20506</ProductVersion>
 	<SchemaVersion>2.0</SchemaVersion>
-	<ProjectGuid>{33D30908-5A08-0E20-77FC-7789D5909189}</ProjectGuid>
+	<ProjectGuid>{EE80C96C-A26F-4826-F966-FF933B01D041}</ProjectGuid>
 	<OutputType>Library</OutputType>
 	<AppDesignerFolder>Properties</AppDesignerFolder>
 	<RootNamespace></RootNamespace>
@@ -68,16 +68,16 @@
  <HintPath>C:/Program Files/Unity/Editor/Data/UnityExtensions/Unity/UnityAnalytics/UnityEngine.Analytics.dll</HintPath>
  </Reference>
  <Reference Include="DOTween">
- <HintPath>H:/projects/Puzzle Game Build/Assets/Demigiant/DOTween/DOTween.dll</HintPath>
+ <HintPath>H:/projects/PuzzleGame/Assets/Demigiant/DOTween/DOTween.dll</HintPath>
  </Reference>
  <Reference Include="DOTween43">
- <HintPath>H:/projects/Puzzle Game Build/Assets/Demigiant/DOTween/DOTween43.dll</HintPath>
+ <HintPath>H:/projects/PuzzleGame/Assets/Demigiant/DOTween/DOTween43.dll</HintPath>
  </Reference>
  <Reference Include="DOTween46">
- <HintPath>H:/projects/Puzzle Game Build/Assets/Demigiant/DOTween/DOTween46.dll</HintPath>
+ <HintPath>H:/projects/PuzzleGame/Assets/Demigiant/DOTween/DOTween46.dll</HintPath>
  </Reference>
  <Reference Include="DOTween50">
- <HintPath>H:/projects/Puzzle Game Build/Assets/Demigiant/DOTween/DOTween50.dll</HintPath>
+ <HintPath>H:/projects/PuzzleGame/Assets/Demigiant/DOTween/DOTween50.dll</HintPath>
  </Reference>
  <Reference Include="UnityEditor.iOS.Extensions.Xcode">
  <HintPath>C:/Program Files/Unity/Editor/Data/PlaybackEngines/iOSSupport/UnityEditor.iOS.Extensions.Xcode.dll</HintPath>
